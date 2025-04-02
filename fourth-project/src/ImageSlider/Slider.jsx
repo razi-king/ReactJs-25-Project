@@ -21,7 +21,7 @@ export default function Slider({url,page,limit}) {
         }
     }
     useEffect(()=>{
-        if(url!=="" )fetchImages(url);
+        if(url!=="")fetchImages(url);
     },[url])
     console.log(images);
     if(loading){
