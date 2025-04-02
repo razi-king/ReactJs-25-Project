@@ -55,7 +55,7 @@ export default function Slider({url,page,limit}) {
         <span className='flex absolute bottom-4'>
 
             {
-                images && images.length ? images.map((_,index)=><button className='bg-white h-4 w-4 rounded-[50%] m-1 cursor-pointer'  key={index} onClick={()=>setCurrentSlide(index)}>
+                images && images.length ? images.map((_,index)=><button className={currentSlide===index ? 'bg-white h-4 w-4 rounded-[50%] m-1 cursor-not-allowed':'bg-gray-300 h-4 w-4 rounded-lg m-1 cursor-pointer'}  key={index} onClick={()=>setCurrentSlide(index)}>
                     
                 </button>) :null
             }
