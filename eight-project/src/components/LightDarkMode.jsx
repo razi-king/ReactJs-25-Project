@@ -10,7 +10,7 @@ export default function LightDarkMode() {
         
     }
   return (
-    <div className={`min-h-screen text-center m-auto pt-[50%] ${theme==='black' ? 'bg-black text-white' :'bg-white text-black' }`}>
+    <div className={`min-h-screen  ${theme==='black' ? 'bg-black text-white' :'bg-white text-black' }`}>
         <div>
             <h1 className='font-bold text-2xl'>Hello World</h1>
             <button onClick={handleToggleTheme} className='font-bold text-xl border-2 hover:bg-blue-400'>Change Theme</button>
