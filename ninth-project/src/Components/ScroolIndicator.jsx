@@ -12,7 +12,12 @@ export default function ScrollIndicator({ url }) {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         setScrollPercentage((howMuchScrolled / height) * 100);
     }
-
+    if(loading){
+        return <div>Loading Data | Please Wait ...</div>
+    }
+    if(errorMessage){
+        return <div>Error ! {errorMessage}</div>
+    }
     // Function to fetch data from the provided URL
     async function fetchData(getUrl) {
         try {
