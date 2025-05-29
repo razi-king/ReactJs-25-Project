@@ -7,7 +7,7 @@ function Register() {
     )
   return (
     <Form>
-        <h1 className='d-flex flex-wrap justify-content-center'>Register</h1>
+        <h1 className='d-flex flex-wrap justify-content-center'>Register Page</h1>
          <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>User Name</Form.Label>
         <Form.Control type="text" placeholder="Enter your user name" />

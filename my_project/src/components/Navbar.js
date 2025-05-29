@@ -8,6 +8,8 @@ export default function Navbar() {
     <Link to="/login">Login</Link>
     <Link to="/register">Register</Link>
     <Link to="/contact">Contact</Link>
+    <Link to="/atm">Atm</Link>
+    <Link to="/bill">Electricity Bill</Link>
 </div>
 
   )
